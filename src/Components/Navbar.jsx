@@ -21,6 +21,12 @@ const Navbar = () => {
       <li class="nav-item">
         <Link class="nav-link" to="/card">Card</Link>
       </li>
+      <li class="nav-item">
+        <Link class="nav-link" to="/search">Search</Link>
+      </li>
+      <li class="nav-item">
+        <Link class="nav-link" to="/form">Form</Link>
+      </li>
     </ul>
     <form class="form-inline my-2 my-lg-0 d-flex">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" />
