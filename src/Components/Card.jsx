@@ -1,6 +1,7 @@
 import React from 'react';
+import data from '../Data/Data';
 
-const Card = ({ data }) => {
+const Card = () => {
   return (
     <div className="container">
       <div className='row'>

@@ -1,18 +1,24 @@
-import React from "react";
 import "./App.css";
-import Header from "./Components/Header";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import Faq from "./Components/Faq";
+import Card from "./Components/Card";
+import Navbar from "./Components/Navbar";
 
-function App() {
-  let content = {
-    name: "Shahzaib",
-    email: "shahzaibmuhammad627@gmail.com",
-  };
-
+export default function App() {
   return (
-    <>
-      <Header content={content} />
-    </>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route index element={<Home />} />
+        <Route path="faq" element={<Faq />} />
+        <Route path="card*" element={<Card />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);

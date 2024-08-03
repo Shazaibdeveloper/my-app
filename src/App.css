@@ -24,15 +24,48 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.faqcontainer {
+  background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    box-shadow: 5px 5px 2cap #888888;
+}  
+
+h1 {
+  font-family: WorkSans-Bold;
+  display:flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.faqcontainer img {
+  margin-right: 20px;
+}
+
+.faqcontainer .question {
+  font-family: WorkSans-SemiBold;
+  padding: 20px;
+  font-size: 20px;
+  border-bottom: 0.5px solid wheat;
+  padding-bottom: 20px;
+}
+
+.faqcontainer .question details summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 7px;
+}
+
+.faqcontainer .question details summary img {
+  float: right;
+}
+
+.faqcontainer .question p {
+  font-family: WorkSans-Regular;
+  font-size: 17px;
+  color: #767676;
+}
+
+.faqcontainer .attribution {
+  position: absolute;
+  bottom: 5%;
 }
